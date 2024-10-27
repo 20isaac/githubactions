@@ -4,7 +4,7 @@ on:
   - push
 
 jobs: 
-    first_job: 
+    first_job: ikes-k8s
         runs-on: ubuntu-latest
         steps:
             - name: First Message
