@@ -1,18 +1,18 @@
-name: First Workflow
+name: Second Workflow
 
 on:
   - push
 
 jobs: 
     first_job: 
-        name: ikes_k8s
+        name: darks_k8s 
         runs-on: ubuntu-latest
         steps:
-            - name: First Message
-              run: echo "Welcome to CI/CD via GitHu Actions"
+            - name: Checkout Code
+              uses: actions/checkout@v4
 
-            - name: List All Files including Hidden Ones
-              run: ls -1a
-
-            - name: Show Current Directory
-              run: pwd
+            - name: List and Read files
+              run: |
+                echo "My first GitHu Actions Job"
+                ls -1
+                cat dockerfile
