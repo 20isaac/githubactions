@@ -4,15 +4,14 @@ on:
   - push
 
 jobs: 
-    first_job: 
-        name: darks_k8s 
+    first_job:  
         runs-on: ubuntu-latest
         steps:
             - name: Checkout Code
               uses: actions/checkout@v4
 
             - name: List and Read files
-              run: |
+              run: 
                 echo "My first GitHu Actions Job"
                 ls -1a
                 cat Dockerfile
