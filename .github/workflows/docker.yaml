@@ -28,4 +28,4 @@ jobs:
       - name: Docker Login
         run: docker login --username=20isaac --password=Global123%
       - name: Docker Run
-        run: docker run -d -p 8080:80 docker.io/efotsowoe/resume-app:latest
+        run: docker run -d -p 8080:80 docker.io/20isaac/resume-app:latest
