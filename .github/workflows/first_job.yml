@@ -1,20 +1,20 @@
-# name: Second Workflow
+name: Second Workflow
 
-# on:
-#   push:
-#     branches:
-#       - main
+on:
+  push:
+    branches:
+      - main
 
-# jobs:
-#   first_job:
-#     runs-on: ubuntu-latest
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
 
-#     steps:
-#       - name: Checkout Code
-#         uses: actions/checkout@v4
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
 
-#       - name: List and Read files
-#         run: |
-#           echo "My first GitHub Actions Job"
-#           ls -1
-#           cat .github/workflows/Dockerfile
+      - name: List and Read files
+        run: |
+          echo "My first GitHub Actions Job"
+          ls -1
+          cat .github/workflows/Dockerfile
